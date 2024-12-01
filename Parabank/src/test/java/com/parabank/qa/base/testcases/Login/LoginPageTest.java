@@ -1,12 +1,12 @@
-package com.parabank.qa.base.testcases;
+package com.parabank.qa.base.testcases.Login;
 
-import com.parabank.qa.base.pages.LoginPage;
+import com.parabank.qa.base.pages.Login.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.parabank.qa.base.base.TestBase;
-import com.parabank.qa.base.pages.HomePage;
+import com.parabank.qa.base.pages.Home.HomePage;
 
 
 public class LoginPageTest extends TestBase {

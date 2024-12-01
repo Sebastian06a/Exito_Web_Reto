@@ -3,9 +3,9 @@
 <suite name="FREE PARABANK Application Test Automation Test Site">
     <test name="Parabank">
         <classes>
-            <class name="com.parabank.qa.base.testcases.LoginPageTest"> </class>
-            <class name="com.parabank.qa.base.testcases.HomePageTest"> </class>
-            <class name="com.parabank.qa.base.testcases.OpenNewAccountPageTest"> </class>
+            <class name="com.parabank.qa.base.testcases.Login.LoginPageTest"> </class>
+            <class name="com.parabank.qa.base.testcases.dashboard.HomePageTest"> </class>
+            <class name="com.parabank.qa.base.testcases.dashboard.OpenNewAccountPageTest"> </class>
 
         </classes>
     </test> <!-- Parabank(failed) -->

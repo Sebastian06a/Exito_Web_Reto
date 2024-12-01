@@ -1,5 +1,5 @@
 //Transferir fondos
-package com.parabank.qa.base.pages;
+package com.parabank.qa.base.pages.dashboard;
 
 import com.parabank.qa.base.base.TestBase;
 

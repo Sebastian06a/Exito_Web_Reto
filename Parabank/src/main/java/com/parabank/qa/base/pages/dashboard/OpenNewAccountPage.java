@@ -1,5 +1,5 @@
 //Abrir nueva cuenta
-package com.parabank.qa.base.pages;
+package com.parabank.qa.base.pages.dashboard;
 
 import com.parabank.qa.base.base.TestBase;
 import org.openqa.selenium.By;

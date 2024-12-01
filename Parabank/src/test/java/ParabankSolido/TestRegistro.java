@@ -65,9 +65,9 @@ public class TestRegistro {
         WebElement userName = driver.findElement(By.cssSelector("input#customer\\.username"));
         userName.sendKeys("au");
         WebElement passWord = driver.findElement(By.cssSelector("input#customer\\.password"));
-        passWord.sendKeys("1234");
+        passWord.sendKeys("au");
         WebElement repeatedPassword = driver.findElement(By.cssSelector("input#repeatedPassword"));
-        repeatedPassword.sendKeys("1234");
+        repeatedPassword.sendKeys("au");
 
         //Boton de click registro
         WebElement registro = driver.findElement(By.cssSelector("#customerForm > table > tbody > tr:nth-child(13) >td:nth-child(2)>input"));
@@ -98,7 +98,7 @@ public class TestRegistro {
             String actualusuario2 = aUserName.getText();
             System.out.println(actualusuario2);
             WebElement aPassword = driver.findElement(By.name("password"));
-            aPassword.sendKeys("1234");
+            aPassword.sendKeys("au");
             WebElement aSubmit = driver.findElement(By.xpath("//*[@id='loginPanel']/form/div[3]/input"));
             aSubmit.click();
 

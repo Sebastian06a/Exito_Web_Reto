@@ -3,9 +3,12 @@ package com.parabank.qa.base.base;
 import com.parabank.qa.base.util.TestUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -22,7 +25,7 @@ public class TestBase {
     public TestBase() {
         try {
             prop = new Properties();
-            FileInputStream ip = new FileInputStream("C:\\Users\\sebas\\IdeaProjects\\Parabank\\src\\main\\java\\com\\parabank\\qa\\base\\config\\config.properties");
+            FileInputStream ip = new FileInputStream("C:\\Users\\USER\\IdeaProjects\\AunaTesting\\Parabank\\src\\main\\java\\com\\parabank\\qa\\base\\config\\config.properties");
             prop.load(ip);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -40,7 +43,7 @@ public class TestBase {
 
        String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver","C:\\Users\\sebas\\IdeaProjects\\Parabank\\browserdrivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver","C:\\Users\\USER\\IdeaProjects\\AunaTesting\\Parabank\\browserdrivers\\chromedriver.exe");
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
 

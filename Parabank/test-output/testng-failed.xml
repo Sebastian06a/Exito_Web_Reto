@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Parabank(failed)">
     <classes>
-      <class name="com.parabank.qa.base.testcases.LoginPageTest">
+      <class name="com.parabank.qa.base.testcases.Login.LoginPageTest">
         <methods>
           <include name="loginTest"/>
           <include name="tearDown"/>
@@ -11,7 +11,7 @@
           <include name="parabankLogoImageTest"/>
           <include name="loginPageTitleTest"/>
         </methods>
-      </class> <!-- com.parabank.qa.base.testcases.LoginPageTest -->
+      </class> <!-- com.parabank.qa.base.testcases.Login.LoginPageTest -->
     </classes>
   </test> <!-- Parabank(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

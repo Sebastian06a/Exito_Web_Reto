@@ -1,6 +1,7 @@
 //Pagina de Inicio de sesion
-package com.parabank.qa.base.pages;
+package com.parabank.qa.base.pages.Login;
 
+import com.parabank.qa.base.pages.Home.HomePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

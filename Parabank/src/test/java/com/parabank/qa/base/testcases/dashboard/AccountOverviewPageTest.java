@@ -1,10 +1,10 @@
-package com.parabank.qa.base.testcases;
+package com.parabank.qa.base.testcases.dashboard;
 
 import com.parabank.qa.base.base.TestBase;
-import com.parabank.qa.base.pages.AccountOverviewPage;
-import com.parabank.qa.base.pages.HomePage;
-import com.parabank.qa.base.pages.LoginPage;
-import com.parabank.qa.base.pages.OpenNewAccountPage;
+import com.parabank.qa.base.pages.dashboard.AccountOverviewPage;
+import com.parabank.qa.base.pages.Home.HomePage;
+import com.parabank.qa.base.pages.Login.LoginPage;
+import com.parabank.qa.base.pages.dashboard.OpenNewAccountPage;
 import com.parabank.qa.base.util.TestUtil;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -35,7 +35,7 @@ public class AccountOverviewPageTest extends TestBase {
         homePage = loginPage.login(prop.getProperty("USERNAME"), prop.getProperty("PASSWORD"));
         testUtil.switchToTableFrame();
         accountOverviewPage = homePage.clickAccountOverviewLink();
-        opennewaccountPage = homePage.clickOnAccountsLink();
+        opennewaccountPage = homePage.clickOpenNewAccountsLink();
     }
 
     //Validar Accounts Table

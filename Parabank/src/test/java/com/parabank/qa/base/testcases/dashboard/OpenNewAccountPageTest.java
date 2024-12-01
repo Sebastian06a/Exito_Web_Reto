@@ -1,13 +1,14 @@
-package com.parabank.qa.base.testcases;
+package com.parabank.qa.base.testcases.dashboard;
 
+import com.parabank.qa.base.pages.dashboard.AccountOverviewPage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.parabank.qa.base.base.TestBase;
-import com.parabank.qa.base.pages.HomePage;
-import com.parabank.qa.base.pages.LoginPage;
-import com.parabank.qa.base.pages.OpenNewAccountPage;
+import com.parabank.qa.base.pages.Home.HomePage;
+import com.parabank.qa.base.pages.Login.LoginPage;
+import com.parabank.qa.base.pages.dashboard.OpenNewAccountPage;
 import com.parabank.qa.base.util.TestUtil;
 
 public class OpenNewAccountPageTest extends TestBase {
@@ -15,6 +16,7 @@ public class OpenNewAccountPageTest extends TestBase {
     HomePage homePage;
     TestUtil testUtil;
     OpenNewAccountPage opennewaccountPage;
+    AccountOverviewPage accountOverviewPage;
 
     //Constructor
     public OpenNewAccountPageTest(){
@@ -26,10 +28,12 @@ public class OpenNewAccountPageTest extends TestBase {
         initialization();
         testUtil = new TestUtil();
         opennewaccountPage = new OpenNewAccountPage();
+        accountOverviewPage = new AccountOverviewPage();
         loginPage = new LoginPage();
         homePage = loginPage.login(prop.getProperty("USERNAME"), prop.getProperty("PASSWORD"));
         testUtil.switchToFrame();
-        opennewaccountPage = homePage.clickOnAccountsLink();
+        opennewaccountPage = homePage.clickOpenNewAccountsLink();
+        accountOverviewPage = homePage.clickAccountOverviewLink();
     }
 
     @Test(priority = 1)

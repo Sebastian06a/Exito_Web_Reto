@@ -1,5 +1,5 @@
 //Pagina de registro
-package com.parabank.qa.base.pages;
+package com.parabank.qa.base.pages.RegistroUser;
 
 import com.parabank.qa.base.base.TestBase;
 import org.openqa.selenium.WebElement;
