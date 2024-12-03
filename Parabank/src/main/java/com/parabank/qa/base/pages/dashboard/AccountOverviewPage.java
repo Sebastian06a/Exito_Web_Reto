@@ -27,7 +27,7 @@ public class AccountOverviewPage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    //Validar Account Table
+    //01.Validar Account Table
     public boolean verifyAccountsTable(){
         return accountTable.isDisplayed();
     }

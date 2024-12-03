@@ -36,6 +36,7 @@ public class OpenNewAccountPageTest extends TestBase {
         accountOverviewPage = homePage.clickAccountOverviewLink();
     }
 
+    //Validar New Accounts
     @Test(priority = 1)
     public void verifyOpenNewAccountPageLabel(){
         Assert.assertTrue(opennewaccountPage.verifyOpenNewAccountLabel(),"contacts label is missing on the page");
@@ -49,7 +50,6 @@ public class OpenNewAccountPageTest extends TestBase {
     @Test(priority = 3)
     public void selectFondosOpenNewAccountPageTest(){
         opennewaccountPage.selectNewAccountByName("SAVINGS");
-        //opennewaccountPage.selectNewAccountByName("14232");
     }
 
 

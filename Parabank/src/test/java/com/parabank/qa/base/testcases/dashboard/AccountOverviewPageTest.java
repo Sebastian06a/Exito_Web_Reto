@@ -12,13 +12,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AccountOverviewPageTest extends TestBase {
-
     LoginPage loginPage;
     HomePage homePage;
     TestUtil testUtil;
     AccountOverviewPage accountOverviewPage;
     OpenNewAccountPage opennewaccountPage;
-
 
     //Constructor
     public AccountOverviewPageTest() {
@@ -44,8 +42,6 @@ public class AccountOverviewPageTest extends TestBase {
         testUtil.switchToTableFrame();
         Assert.assertTrue(accountOverviewPage.verifyAccountsTable());
     }
-
-
 
 
 

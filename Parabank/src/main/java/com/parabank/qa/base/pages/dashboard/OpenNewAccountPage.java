@@ -26,10 +26,12 @@ public class OpenNewAccountPage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
+    //01. Validar newaccountLabel
     public boolean verifyOpenNewAccountLabel(){
         return newaccountLabel.isDisplayed();
     }
 
+    //02. Validar selectFondosOpenNewAccount
     public void selectNewAccountByName(String SAVINGS ){
         driver.findElement(By.xpath("//option[text()='"+SAVINGS+"']")).click();
     }
