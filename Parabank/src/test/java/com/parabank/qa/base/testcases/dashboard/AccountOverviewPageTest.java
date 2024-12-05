@@ -16,7 +16,6 @@ public class AccountOverviewPageTest extends TestBase {
     HomePage homePage;
     TestUtil testUtil;
     AccountOverviewPage accountOverviewPage;
-    OpenNewAccountPage opennewaccountPage;
 
     //Constructor
     public AccountOverviewPageTest() {
@@ -28,12 +27,10 @@ public class AccountOverviewPageTest extends TestBase {
         initialization();
         testUtil = new TestUtil();
         accountOverviewPage = new AccountOverviewPage();
-        opennewaccountPage = new OpenNewAccountPage();
         loginPage = new LoginPage();
         homePage = loginPage.login(prop.getProperty("USERNAME"), prop.getProperty("PASSWORD"));
         testUtil.switchToTableFrame();
         accountOverviewPage = homePage.clickAccountOverviewLink();
-        opennewaccountPage = homePage.clickOpenNewAccountsLink();
     }
 
     //Validar Accounts Table

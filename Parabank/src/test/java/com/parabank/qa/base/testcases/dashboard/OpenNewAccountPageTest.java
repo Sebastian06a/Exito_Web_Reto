@@ -16,7 +16,7 @@ public class OpenNewAccountPageTest extends TestBase {
     HomePage homePage;
     TestUtil testUtil;
     OpenNewAccountPage opennewaccountPage;
-    AccountOverviewPage accountOverviewPage;
+
 
     //Constructor
     public OpenNewAccountPageTest(){
@@ -28,12 +28,10 @@ public class OpenNewAccountPageTest extends TestBase {
         initialization();
         testUtil = new TestUtil();
         opennewaccountPage = new OpenNewAccountPage();
-        accountOverviewPage = new AccountOverviewPage();
         loginPage = new LoginPage();
         homePage = loginPage.login(prop.getProperty("USERNAME"), prop.getProperty("PASSWORD"));
         testUtil.switchToFrame();
         opennewaccountPage = homePage.clickOpenNewAccountsLink();
-        accountOverviewPage = homePage.clickAccountOverviewLink();
     }
 
     //Validar New Accounts

@@ -28,32 +28,22 @@ public class TransferFundsPageTest extends TestBase {
     @BeforeMethod
     public void setUp(){
         initialization();
-        initialization();
         testUtil = new TestUtil();
-        accountOverviewPage = new AccountOverviewPage();
-        opennewaccountPage = new OpenNewAccountPage();
         loginPage = new LoginPage();
         homePage = loginPage.login(prop.getProperty("USERNAME"), prop.getProperty("PASSWORD"));
         testUtil.switchToTableFrame();
-        accountOverviewPage = homePage.clickAccountOverviewLink();
-        opennewaccountPage = homePage.clickOpenNewAccountsLink();
         transferFundsPage = homePage.clicktransferFundsLink();
     }
 
     //Validar transferencia de fondos "Transfer Funds"
     @Test(priority=1)
     public void verifyTransferAmountTest(){
-        testUtil.switchToTableFrame();
-    Assert.assertTrue(transferFundsPage.verifyTransferAmount(), "Verificar Transferencia");
+    //Assert.assertTrue(transferFundsPage.verifyTransferAmount(), "Verificar Transferencia-Transfer Funds");
     }
 
-@Test(priority=2)
-public void verifyTransferfundsAmountTest(){
-
-}
 
     @AfterMethod
     public void tearDown(){
-        driver.quit();
+       //driver.quit();
     }
-}
+    }

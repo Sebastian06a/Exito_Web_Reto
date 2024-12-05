@@ -26,7 +26,7 @@ public class OpenNewAccountPage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    //01. Validar newaccountLabel
+    //01. Validar comprobacion si es verdadera en newaccountLabel
     public boolean verifyOpenNewAccountLabel(){
         return newaccountLabel.isDisplayed();
     }
