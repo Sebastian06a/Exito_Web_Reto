@@ -97,7 +97,7 @@ public class StepMenuPageTest {
     public void leDoyClicAlBotonDeAgregarProducto() throws InterruptedException {
         JavascriptExecutor executor0 = (JavascriptExecutor) driver;
         executor0.executeScript("arguments[0].click();", driver.findElement(By.xpath("//*[@id=\"__next\"]/main/section[4]/div/div[2]/div[2]/div[2]/ul/li[13]/article/div[2]/div/button")));
-        Thread.sleep(500);
+        Thread.sleep(600);
     }
 
     @Y("doy clic al botton del carrito")
