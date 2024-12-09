@@ -136,7 +136,7 @@ public class StepMenuPageTest {
         // Espera (simulando tiempo necesario para cargar datos o interacciones)
         Thread.sleep(3000); // Ajusta el tiempo según el comportamiento de la página
 
-        // Ingresa el valor "0" en el campo
+
         inputElement.sendKeys("0");
         Thread.sleep(500);
 
